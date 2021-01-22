@@ -6,7 +6,7 @@
 #include "JsonUtil.h"
 #include "CommUtil.h"
 
-const rapidjson::SchemaDocument* CSchemaProvider::GetRemoteDocument(const char* uri, size_t length)
+const rapidjson::SchemaDocument* CSchemaProvider::GetRemoteDocument(const char* uri, rapidjson::SizeType length)
 {
 	// fprintf(stderr, "Try to get remote schema refer: %s\n", uri);
 	std::string uriKey(uri);

@@ -448,7 +448,7 @@ int CApp::BuildSchema()
 	}
 	m_pSchemaProvider->SetBaseDir(GetPathDir(cli.jsonSchema));
 
-	m_pSchema = new rapidjson::SchemaDocument(sd, m_pSchemaProvider);
+	m_pSchema = new rapidjson::SchemaDocument(sd, 0, 0, m_pSchemaProvider);
 	if (nullptr == m_pSchema)
 	{
 		fprintf(stderr, "Fail to new object rapidjson::SchemaDocument!\n");

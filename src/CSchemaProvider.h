@@ -11,7 +11,8 @@
 class CSchemaProvider : public rapidjson::IRemoteSchemaDocumentProvider
 {
 public:
-	virtual const rapidjson::SchemaDocument* GetRemoteDocument(const char* uri, size_t length);
+	// virtual const rapidjson::SchemaDocument* GetRemoteDocument(const char* uri, size_t length);
+	virtual const rapidjson::SchemaDocument* GetRemoteDocument(const char* uri, rapidjson::SizeType length);
 
 	void SetBaseDir(const std::string& baseDir)
 	{

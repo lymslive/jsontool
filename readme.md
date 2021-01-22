@@ -12,6 +12,19 @@ different json file, or compare multiple json files from different dirctory.
 They are header-only libs, can simplely copy into `include/` directory when
 build.
 
+## Build
+
+In windows, a vs.sln project file is provide.
+
+In linux, also simple to compile all `*.cpp` files in `src/` like bellow, feel
+free the rename the target name `jsontool.exe` as you prefered.
+
+```bash
+cd src
+g++ -I../include -c *.cpp
+g++ -o jsontool.exe *.o
+```
+
 ## Usage
 
 Can run in linux / windows command line, quick start with `-h` or `--help`.
